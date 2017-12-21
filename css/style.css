@@ -1,18 +1,40 @@
-body { 
+@font-face {
+    font-family: Rajdhani;
+    src: url(fonts/Rajdhani/Rajdhani-Regular.ttf);
+}
+
+body {
     background-image: url('../img/creepyshark.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center; 
+    background-position: center;
     display: block fixed;
 }
- .top {
+
+#main {
+    margin-top: 200px;
+}
+
+.heading-primary {
+    text-transform: uppercase;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 70px;
+    letter-spacing: 20px;
+}
+
+.top {
     margin: auto;
     width: 80%;
     background: transparent;
     padding: 10px;
-} 
+}
+
 footer {
-      position: relative;
-      text-align: center;
-      bottom: -200px;
-} 
+    position: relative;
+    text-align: center;
+    bottom: -200px;
+}
+
+footer span i {
+    color: #f03434;
+}

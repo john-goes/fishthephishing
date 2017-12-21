@@ -16,50 +16,56 @@
   <meta language="English, Portuguese" content="en-us, pt-br">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- load bootstrap-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
-    crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-    crossorigin="anonymous"></script>
-  <!-- load fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Rajdhani:700" rel="stylesheet">
-  <!-- load style -->
+  <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <!-- load reset -->
-  <link rel="stylesheet" href="css/bootstrap-reboot.css">
-  <!-- jQuery first, then Tether, then Bootstrap JS. -->
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-    crossorigin="anonymous"></script>
+
+
+
 </head>
 
 <body>
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-  <div class="top">
-    <center><br><br><br>
-      <p style="font-size:70px">
-        <font color="white" style="font-family: 'Rajdhani', sans-serif;">
-          <thead>
-            Fish the Phishing 
-          </thead>
-        </font>
-      </p>
-    </center>
-  </div><br><br>
-  <form action="/search.php">
-    <div class="form-group">
-      <label for="formGroupInput" class="col-md-2 col-form-label text-white">
-        <b>Link/E-mail/Domain</b>
-      </label>
-      <input class="form-control" class="col-8" type="url" placeholder="Example: www.bb.com ou bradesco@bb.stackforce.biz" id="url-input">
+  <section id="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="heading">
+            <div class="text-center">
+              <h1 class="text-white heading-primary">Fish the Phishing</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="input_search" class="text-white">Enter with e-mail, domain or url:</label>
+              <div class="input-group">
+                <input type="url" class="form-control" placeholder="e.g., https://www.example.com">
+                <span class="input-group-btn">
+                  <button type="button" class="btn btn-primary">
+                    <i class="fa fa-search btn-primary"></i>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-    <button type="button" class="btn btn-primary">Search</button>
-  </form><br>
-  <footer style="color: white;">Created with 💚 at Pagar.me</footer>
-</body>
-</html>
+  </section>
 
+  <footer>
+    <span class="text-white">
+      Created with
+      <i class="fa fa-heart"></i> at Pagar.me
+    </span>
+  </footer>
+
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/popper/popper.min.js"></script>
+</body>
+
+</html>
